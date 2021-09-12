@@ -1,3 +1,54 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quiz {
+  box-sizing: border-box;
+  border: 2px solid #1864ab;
+  width: 90%;
+  max-width: 700px;
+
+  &__question {
+    margin: 0;
+    font-size: 1.5em;
+    padding: 1em;
+  }
+
+  &__options {
+    padding: 0 2em;
+    margin-bottom: 3em;
+    list-style: none;
+
+    &__item {
+      margin-bottom: 1em;
+    }
+
+    label {
+      color: #555;
+    }
+
+    input[type="radio"] {
+      float: left;
+      margin-right: 1em;
+    }
+  }
+
+  &__submit {
+    width: 100%;
+    border: none;
+    background-color: #1864ab;
+    color: #fff;
+    font-size: 1em;
+    padding: 1em 0;
+    cursor: pointer;
+  }
+}

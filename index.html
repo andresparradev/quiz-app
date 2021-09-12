@@ -8,7 +8,30 @@
 </head>
 
 <body>
-  <div id="app"></div>
+  <div class="app">
+    <div class="quiz">
+      <h1 class="quiz__question">Question test?</h1>
+      <ul class="quiz__options">
+        <li class="quiz__options__item">
+          <label for="option_a">Test A</label>
+          <input type="radio" id="option_a" name="answer" />
+        </li>
+        <li class="quiz__options__item">
+          <label for="option_b">Test B</label>
+          <input type="radio" id="option_b" name="answer" />
+        </li>
+        <li class="quiz__options__item">
+          <label for="option_c">Test C</label>
+          <input type="radio" id="option_c" name="answer" />
+        </li>
+        <li class="quiz__options__item">
+          <label for="option_d">Test D</label>
+          <input type="radio" id="option_d" name="answer" />
+        </li>
+      </ul>
+      <button class="quiz__submit">Next</button>
+    </div>
+  </div>
   <script type="module" src="/src/main.js"></script>
 </body>
 

@@ -1,0 +1,52 @@
+[
+  {
+    "question": "What is the protocol that works together with TCP / IP to bring web resources to the client?",
+    "options": {
+      "a": "HTTP",
+      "b": "Buscador",
+      "c": "WWW",
+      "d": "Navegador"
+    },
+    "correct": "a"
+  },
+  {
+    "question": "The img tag is used for ...",
+    "options": {
+      "a": "Videos",
+      "b": "Images",
+      "c": "Links",
+      "d": "Buttons"
+    },
+    "correct": "b"
+  },
+  {
+    "question": "What is the hypertext lenguage?",
+    "options": {
+      "a": "HTTP",
+      "b": "PHP",
+      "c": "Javascript",
+      "d": "HTML"
+    },
+    "correct": "d"
+  },
+  {
+    "question": "The a tag is used for ...",
+    "options": {
+      "a": "Links",
+      "b": "Paragraphs",
+      "c": "Videos",
+      "d": "Lists"
+    },
+    "correct": "a"
+  },
+  {
+    "question": "What is the style language?",
+    "options": {
+      "a": "Javascript",
+      "b": "CCS",
+      "c": "CSS",
+      "d": "SQL"
+    },
+    "correct": "c"
+  }
+]
