@@ -9,6 +9,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .quiz {
@@ -67,4 +68,37 @@ body {
 
 .alert.show {
   opacity: 1;
+}
+
+.finished {
+  text-align: center;
+  box-sizing: border-box;
+  border: 2px solid #1864ab;
+  width: 90%;
+  max-width: 700px;
+
+  &__title {
+    margin: 0;
+    padding: 1.5em 0 .5em 0;
+  }
+
+  &__score {
+    margin-bottom: 2em;
+
+    span {
+      margin-top: .5em;
+      display: block;
+      font-size: 2em;
+    }
+  }
+
+  button {
+    width: 100%;
+    border: none;
+    background-color: #1864ab;
+    color: #fff;
+    font-size: 1em;
+    padding: 1em 0;
+    cursor: pointer;
+  }
 }

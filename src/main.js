@@ -7,8 +7,12 @@ let optionsQuestionEl = null;
 let currentQuestion = 0,
   score = 0;
 
-function createQuizApp() {
+function clearAppContent() {
   app.innerHTML = "<div class='alert'></div>";
+}
+
+function createQuizApp() {
+  clearAppContent();
 
   const quiz = document.createElement("div");
   quiz.classList.add("quiz");
@@ -90,10 +94,15 @@ function loadQuestion() {
 }
 
 function finished() {
-  app.innerHTML = `
-    <h1>Finished</h1>
-    <p>
-      <bold>Score:</bold> ${score}
+  clearAppContent();
+
+  const finishedContainer = document.createElement("div");
+  finishedContainer.classList.add("finished");
+  finishedContainer.innerHTML = `
+    <h1 class="finished__title">Finished</h1>
+    <p class="finished__score">
+      Score:
+      <span>${score} / ${questions.length}</span>
     </p>
   `;
 
@@ -106,7 +115,9 @@ function finished() {
     init();
     loadQuestion();
   });
-  app.appendChild(buttonRestartQuiz);
+
+  finishedContainer.appendChild(buttonRestartQuiz);
+  app.appendChild(finishedContainer);
 }
 
 function submitQuestion() {
